@@ -1,0 +1,14 @@
+{
+  "name": "BishBlock",
+  "version": "1.0",
+  "description": "My crack at rolling your own ad blocker",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}

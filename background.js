@@ -1,22 +1,3 @@
-/**
-  * 
-  * To install simply go to chrome > settings > extensions > Load unpacked extension 
-  * Then navigate to the directory that you saved the MyAdBlockChrome folder to and click ok
-  * Then magically you're ready to start blocking ads.
-  *
-  * Ad Block Plus started white listing some ad agencies. 
-  * I imaging because they were paid to. 
-  * So I decided I would role my own ad block
-  * This is that ad block. It is not very complex but gets the job done.
-  * I have not added any features to make the blocked ad's divs pretty.
-  * 
-  * It works by blocking HTTP requests from known ad hosts. 
-  * We load in the host list then block the requests based on who they're calling to.
-  * We block the request before it is even sent,
-  * so that we don't have to load all that extra mess then filter it out after.
-  *
-*/
-
 (function(){
   // Set the object that is going to recieve the promise
   var urlList = getList();

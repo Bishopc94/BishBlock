@@ -43,7 +43,8 @@
   // Format the list of host names to match the expected pattern
   function format(list){
     var patterns = list.split("\n");
-    // We have to remove the last element in the array because it is a newline. If we didn't it would return "*://*./*" as a formated host name which would block all traffic
+    // We have to remove the last element in the array because it is a newline. 
+    // If we didn't it would return "*://*./*" as a formated host name which would block all traffic
     patterns.pop();
     for(var i = 0; i < patterns.length;i++){
       patterns[i] = "*://*." + patterns[i] + "/*"
